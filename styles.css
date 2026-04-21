@@ -1,0 +1,635 @@
+:root {
+    --lincoln-green: #195905;
+    --robin-orange: #e6621b;
+    --black-primary: #282828;
+    --base-green: #b4d6a0;
+    --gradient-green: #7ea965;
+}
+body {
+    font-family: "Oswald", sans-serif;
+    background: radial-gradient(circle, var(--gradient-green) 0%, var(--base-green) 100%);
+    color: var(--black-primary);
+    
+    
+}
+
+.pageBody {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}
+
+.calendar{
+    max-height: 20rem;
+}
+
+.fc-event {
+  background-color: var(--gradient-green);
+  border: none;
+  font-size: 1rem;
+  line-height: 1.2;
+  padding: 2px 4px;
+}
+.fc-event-title {
+  white-space: normal !important;
+}
+
+.fc-header-toolbar{
+    font-size: clamp(.65rem, 1vw, 1.25rem);
+    
+}
+.fc-toolbar-title{
+    color: var(--lincoln-green);
+}
+.fc .fc-button-primary {
+    background-color: var(--lincoln-green) !important;
+    border-color: var(--gradient-green);
+    color: whitesmoke; /* Text color */
+    text-transform: capitalize;
+}
+
+.fc-event:hover{
+    font-weight: 400;
+}
+
+.fc-col-header-cell {
+  background-color: var(--lincoln-green);
+  color: whitesmoke;
+}
+
+/* Change color on hover */
+.fc .fc-button-primary:hover {
+    background-color: var(--lincoln-green) !important;
+}
+
+.fc {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  background: var(--base-green);
+}
+
+
+article{
+    background-color: whitesmoke;
+    border: .25rem solid var(--lincoln-green);
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.25rem;
+    padding: 1rem;
+    min-height: 2vh;
+}
+
+article.container{
+    border-radius: 2rem;
+}
+
+footer{
+    background-color: whitesmoke;
+    border-top: .25rem solid var(--lincoln-green);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.25rem;
+    min-height: 8vh;
+}
+
+h1{
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+}
+h2{
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    color: var(--black-primary);
+}
+
+.sub-nav {
+    position: sticky;
+    top: 4.55rem;
+    z-index: 1020;
+    background-color: whitesmoke;
+    padding-bottom: 1rem;
+    border-bottom: .25rem solid var(--lincoln-green);
+}
+
+.nosubnav {
+    border-bottom: .25rem solid var(--lincoln-green);
+}
+
+a {
+    color: var(--lincoln-green)
+}
+
+a:hover {
+    color: var(--robin-orange);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15rem;
+    background: url('images/FOREST-BACKGROUND.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.region {
+  fill: rgba(255, 255, 255, 0); /* transparent */
+  stroke: transparent;
+  stroke-width: 2;
+  transition: all 0.3s ease;
+  position : relative;
+}
+
+.region:hover {
+  fill: rgba(255, 255, 255, 0.2); /* soft highlight */
+  stroke: var(--lincoln-green);
+  stroke-width: 3;
+  cursor: pointer;
+}
+
+svg {
+    border: solid .25rem var(--lincoln-green);
+}
+
+.region::after {
+  content: attr(data-name);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s ease, transform 0.1s ease;
+}
+
+.region:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.home-content {
+    position: relative;
+    padding: 2rem;
+    background: radial-gradient(circle, var(--gradient-green) 0%, var(--base-green) 100%);
+    
+}
+
+.hamburger {
+    width: 3rem;
+    max-width: 10vw;
+}
+
+.home-nav {
+    background: whitesmoke;
+    border-top: .25rem solid var(--lincoln-green);
+}
+
+.navbar{
+    background: whitesmoke;
+    font-size: clamp(1.25rem, 1vw, 1.75rem);
+}
+
+.navbar-collapse{
+    background: whitesmoke;
+}
+
+.nav-link{
+    color: var(--lincoln-green);
+}
+.nav-alt-name{
+    font-weight: bold;
+}
+
+.home-head { 
+    margin-bottom: 14rem;
+}
+
+.home-head-text{
+    color: white;
+    text-shadow: 0 0 5px var(--base-green), 0 0 10px var(--base-green), 0 0 15px var(--base-green), 0 0 20px var(--lincoln-green), 0 0 30px #000, 0 0 40px #000, 0 0 55px var(--lincoln-green), 0 0 75px #000;
+    font-size: clamp(2.4rem, 4vw, 4rem);
+}
+
+.logo-image{
+    height: 3rem;
+}
+
+.image-display{
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.image-display-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.image-display-dynamic-center{
+    display: block;
+    --side-margin: clamp(1rem, 2vw, 2rem);
+  
+    margin-left: var(--side-margin);
+    margin-right: var(--side-margin);
+
+    max-width: calc(100% - (var(--side-margin) * 2));
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+.image-display-half{
+    max-width: 50%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.image-display-third{
+    max-width: 70%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.image-grid-container{
+    background-color: transparent;
+    border-color: transparent;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.image-grid-row{
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    border: .25rem solid var(--lincoln-green);
+    padding: 1rem;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.image-grid-row img{
+    border: solid .25rem var(--black-primary);
+}
+
+
+.under-construction-img{
+    width: 35vw;
+    max-width: 500rem;
+}
+.under-construction{
+    text-align: center;
+    padding: .15rem;
+    font-size: 1.75rem;
+    color: var(--black-primary);
+    margin: 3rem;
+    border-radius: 1rem;
+    border: .25rem solid var(--lincoln-green);
+    background-color: rgb(222, 222, 222);
+}
+
+.under-construction-info{
+    background-color: whitesmoke;
+    border: .25rem solid var(--lincoln-green);
+    border-radius: .5rem;
+    font-size: 1.25rem;
+    padding: .25rem;
+}
+
+.under-construction-info .under-construction{
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.under-construction-info h2{
+    font-size: clamp(1.25rem, 3vw, 1.5rem);;
+    text-align: center;
+}
+
+.carousel-head{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.modal-button{
+    border: none;
+    background-color: transparent;
+    font-size: 1.25rem;
+    color: var(--lincoln-green);
+}
+
+.modal-button:hover{
+    color: var(--robin-orange);
+    font-weight: bold;
+    text-decoration: none;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.modal-button:hover > img{
+    border-color: var(--robin-orange);
+    transform: scale(1.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.col-md-6  img{
+    transform: scale(1.01) !important;
+}
+
+.modal-header{
+    background-color: whitesmoke;
+    color: var(--lincoln-green);
+    border-bottom: solid .25rem var(--lincoln-green);
+}
+
+.modal-body{
+    background: radial-gradient(circle, var(--gradient-green) 0%, var(--base-green) 100%);
+    color: var(--black-primary);
+}
+
+.modal-body h3{
+    margin-bottom: 1rem;
+    color: var(--black-primary);
+    text-align: center;
+}
+
+.modal-body img{
+    margin-bottom: 2rem;
+    border: solid .25rem var(--black-primary);
+}
+
+.modal-content{
+    border: solid .25rem var(--lincoln-green);
+    border-radius: .5rem;
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition: ease-in-out 3.5s opacity;
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev {
+  opacity: 1;
+  z-index: 1;
+}
+
+.poem-title{
+    text-align: left !important;
+}
+.stanza{
+    margin-bottom: 1rem;
+    font-size: clamp(.85rem, 2vw, 1.25rem);
+}
+.stanza-align{
+    text-align: justify;
+    margin-bottom: 1rem;
+    font-size: clamp(.75rem, 2vw, 1.25rem);
+}
+
+.legend-heading {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+.legend-list{
+    text-align: left;
+}
+
+ul.writing-list{
+  list-style: none;
+  padding-left: 0;
+}
+ul.schedule-list{
+    list-style: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: whitesmoke;
+    background-color: var(--gradient-green);
+    border-radius: 1rem;
+}
+li.writing-list-item {
+  display: flex;
+  align-items: center; /* vertical centering */
+  gap: 0.5em;
+}
+
+li.writing-list-item::before {
+  content: "•";
+  font-size: 1.2em;
+}
+
+.sp{
+    margin-bottom: 1rem;
+    text-align: left;
+    text-align: justify;
+    font-size: clamp(.85rem, 2vw, 1.25rem);
+    text-indent: clamp(1rem, 2vw, 2rem);
+}
+
+.ss-h{
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: clamp(.75rem, 2vw, 1.25rem);
+}
+.ss-hc{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: clamp(.75rem, 2vw, 1.25rem);
+}
+.ss-p{
+    margin-bottom: 2rem;
+    text-indent: clamp(1rem, 2vw, 2rem);
+    text-align: justify;
+    font-size: clamp(.75rem, 2vw, 1.25rem);
+}
+
+.ss-pb{
+    margin-bottom: 2rem;
+    text-indent: clamp(1rem, 2vw, 2rem);
+    text-align: justify;
+    font-size: clamp(.85rem, 2vw, 1.25rem);
+}
+
+.first-word-bat{
+    font-weight: bold;
+    font-size: clamp(.95rem, 2vw, 1.5rem);
+}
+
+.bat-link{
+    cursor: pointer;
+    transition: color 0.2s ease;
+    color: var(--black-primary) !important;
+}
+.bat-link:hover{
+    color: #0D20A1 !important;
+    font-weight: bold;
+    
+}
+.batman-video {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    text-align: center;
+}
+
+.batman-video.show {
+    max-height: 500px; /* must be big enough for video */
+}
+
+.batman-video video {
+    max-width: 100%;
+    height: auto;
+    border: solid .25rem var(--black-primary);
+    border-radius: 1rem;
+}
+
+
+
+
+/* Section title */
+.section-title {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Swiper container */
+.locksley-swiper {
+    padding: 2rem 0;
+    position: relative;
+
+    /* fade edges */
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 15%,
+        black 85%,
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 15%,
+        black 85%,
+        transparent 100%
+    );
+}
+
+/* Slide base */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.4s ease;
+}
+
+/* Card styling (parchment feel) */
+.locksley-card {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    padding: 16px;
+
+    background: linear-gradient(
+        145deg,
+        whitesmoke,
+        whitesmoke
+    );
+
+    border: 2px solid #2f5d3a;
+    border-radius: 12px;
+
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+
+    font-family: "Oswald", sans-serif;
+
+    transition: all 0.4s ease;
+}
+
+@media (max-width: 768px) {
+  .locksley-card {
+    max-width: 160px;
+  }
+}
+
+
+article.Carousel{
+    border: none;
+    background-color: transparent;
+}
+
+/* Title */
+.locksley-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2f5d3a;
+}
+
+/* Body text */
+.locksley-card p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Center slide emphasis */
+.swiper-slide-active .locksley-card {
+  transform: scale(1.1);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+}
+
+/* Side slides (slightly faded) */
+.swiper-slide-prev .locksley-card,
+.swiper-slide-next .locksley-card {
+  opacity: 0.75;
+}
+
+/* Optional: subtle hover */
+.locksley-card:hover {
+  transform: scale(1.05);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: rgba(47, 93, 58, 0.8);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px;
+  color: white;
+}
+
+.Carousel h2{
+    font-size: clamp(1.5rem, 2vw, 3.5rem);
+    color: whitesmoke;
+    text-shadow: -8px 3px 12px var(--gradient-green), 6px -7px 12px var(--gradient-green), 6px 5px 12px var(--gradient-green);
+    margin-bottom: 0rem;
+    }

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <title>Artwork</title>
+    </head>
+    <body>
+        <div class="pageBody" id="pageBody">
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top home-nav" id="mainNav" >
+                <div class="container">
+                    <a class="navbar-brand d-none d-lg-flex" href="index.html"><img class="logo-image" src="images/homelogotemp.png" alt="A Robin of Locksley Logo"></a>
+                    <a class="navbar-brand d-flex d-lg-none align-items-center  nav-alt-name" href="index.html"><img class="logo-image" src="images/homelogotemp.png" alt="A Robin of Locksley Logo"> &nbsp A Robin of Locksley</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><img src="images/hamburgermenu_120234.png" alt="MORE" class="hamburger"></span>    
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="https://arobinoflocksley.com">Locksley Decree</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="writing.html">Writing</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="comics.html">Comics</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="artwork.html">Artwork</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="worldbuilding.html">Worldbuilding</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <main class="artwork-content">
+                <div class="sub-nav">
+                    <div class="container">
+                        <h1>Artwork</h1>
+                    </div>
+                </div>
+
+                <article class="container">
+                    <h2>Artwork</h2>
+                    <p>This is artwork stuff</p>
+                    <p class="legend-heading">Legend:</p>
+                    <ul class="legend-list">
+                        <li>
+                            &#8616; represents content with multiple images
+                        </li>
+                        <li>
+                            &#9998; represents a 3D print file that I downloaded from someone else and then painted.
+                        </li>
+                        <li>
+                            &#9993; represents an item that I gifted and don't currently possess.
+                        </li>
+                        
+                    </ul>
+                </article>
+                
+                <article class="image-grid-container">
+                    <div class="container text-center">
+                        <div class="row image-grid-row">
+                            <div class="col-12 mb-3">
+                                <h2>Collections</h2>
+                            </div>
+                            <div class="col-md-4 col-6 mb-3">
+                                <a href="artwork/Mini Parade/mini_parade.html"> <img src="artwork/Mini Parade/Batman/Nightwing_Icon.jpg" class="image-display" alt="Nightwing"> <br> Mini Parade</a> 
+                            </div>
+                            <div class="col-md-4 col-6 mb-3">
+                                <a href="artwork/gotham-drawings.html"> <img src="artwork/Gotham Drawings/Joker_Icon.jpg" class="image-display" alt="Joker"> <br> Gotham Drawings</a> 
+                            </div>
+                            <div class="col-md-4 col-6 mb-3">
+                                <a href="artwork/portraits.html"> <img src="artwork/Portraits/Keanu_Icon.jpg" class="image-display" alt="Portraits"> <br> Portraits</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="image-grid-container">
+                    <div class="container text-center">
+                        <div class="row image-grid-row">
+                            <div class="col-12 mb-3">
+                                <h2>Creations</h2>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/cooper-cane.html', 'Cooper Cane')">
+                                    <img src="artwork/Creations/Cooper_Cane_Icon.jpg" class="image-display" alt="Cooper Cane"> <br> Cooper Cane
+                                </button>
+                                
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/mjolnir.html', 'Mj&ouml;lnir')">
+                                    <img src="artwork/Creations/Mjolnir_Icon.jpg" class="image-display" alt="Mjolnir"> <br> Mj&ouml;lnir
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/gwent-board.html', 'Gwent Board')">
+                                    <img src="artwork/Creations/Gwent_Board_Icon.jpg" class="image-display" alt="Gwent Board"> <br> Gwent Board <span class="badge badge">&#8616;</span>
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/gondorian-bracers.html', 'Gondorian Bracers')">
+                                    <img src="artwork/Creations/Gondor_Bracers_Icon.jpg" class="image-display" alt="Gondor Bracers"> <br> Gondorian Bracers <span class="badge badge">&#8616;</span>
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/rapier.html', 'Rapier')">
+                                    <img src="artwork/Creations/Rapier_Icon.jpg" class="image-display" alt="Rapier"> <br> Rapier
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/elven-dagger.html', 'Elven Dagger')">
+                                    <img src="artwork/Creations/Dagger_Icon.jpg" class="image-display" alt="Elven Dagger"> <br> Elven Dagger
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/tommys.html', 'Tommy\'s Pub Sign')">
+                                    <img src="artwork/Creations/Tommys_Pub_Icon.jpg" class="image-display" alt="Tommy's Pub Sign"> <br> Tommy's Pub Sign<span class="badge badge">&#9993;</span>
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/norse-shield.html', 'Norse Shield')">
+                                    <img src="artwork/Creations/Shield_Icon.jpg" class="image-display" alt="Norse Shield"> <br> Norse Shield<span class="badge badge">&#9993;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="image-grid-container">
+                    <div class="container text-center">
+                        <div class="row image-grid-row">
+                            <div class="col-12 mb-3">
+                                <h2>3D Prints</h2>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/stained-glass-daredevil.html', 'Stained Glass Daredevil')">
+                                    <img src="artwork/Creations/Daredevil_Glass_Icon.jpg" class="image-display" alt="Stained Glass Daredevil"> <br> "Stained Glass" Daredevil<span class="badge badge">&#9993;</span>
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/stained-glass-cart.html', 'Stained Glass Cart')">
+                                    <img src="artwork/Creations/Cart_Icon.jpg" class="image-display" alt="Stained Glass Cart"> <br> "Stained Glass" Cart<span class="badge badge">&#9993;</span>
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/stained-glass-mary.html', 'Stained Glass Mary')">
+                                    <img src="artwork/Creations/Blessed_Mother_Icon.jpg" class="image-display" alt="Stained Glass Mary"> <br> "Stained Glass" Mary<span class="badge badge">&#9993;</span>
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/snake-in-a-box.html', 'Snake in a Box')">
+                                    <img src="artwork/Creations/Snake_Box_Icon.jpg" class="image-display" alt="Snake in a Box"> <br> Snake in a Box<span class="badge badge">&#8616; &#9998;</span>
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/clone-commando.html', 'Clone Commando')">
+                                    <img src="artwork/Creations/Commando_Icon.jpg" class="image-display" alt="Clone Commando"> <br> Clone Commando<span class="badge badge">&#9998; &#9993;</span>
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/helldiver.html', 'Helldiver')">
+                                    <img src="artwork/Creations/Helldiver_Icon.jpg" class="image-display" alt="Helldiver"> <br> Helldiver<span class="badge badge">&#8616;&#9998; &#9993;</span>
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/jeremiah.html', 'Jeremiah the Bullywog')">
+                                    <img src="artwork/Creations/Jeremiah_Icon.jpg" class="image-display" alt="Jeremiah the Bullywog"> <br> Jeremiah the Bullywog<span class="badge badge">&#9998; &#9993;</span>
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/sonic.html', 'Sonic the Hedgehog')">
+                                    <img src="artwork/Creations/Sonic_Icon.jpg" class="image-display" alt="Sonic the Hedgehog"> <br> Sonic the Hedgehog<span class="badge badge">&#9998; &#9993;</span>
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/spider-man.html', 'Spider-Man')">
+                                    <img src="artwork/Creations/Spidey_Icon.jpg" class="image-display" alt="Spider-Man"> <br> Spider-Man<span class="badge badge">&#8616; &#9998;&#9993;</span>
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/squirtle.html', 'Squirtle')">
+                                    <img src="artwork/Creations/Squirtle_Figure_Icon.jpg" class="image-display" alt="Squirtle"> <br> Squirtle<span class="badge badge">&#9998; &#9993;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="image-grid-container">
+                    <div class="container text-center">
+                        <div class="row image-grid-row">
+                            <div class="col-12 mb-3">
+                            <h2>College Art</h2>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/fountain.html', 'Fountain')">
+                                    <img src="artwork/College/Fountain_Icon.jpg" class="image-display" alt="Fountain"> <br> Fountain
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/all-father.html', 'The All-Father')">
+                                    <img src="artwork/College/Odin_Icon.jpg" class="image-display" alt="The All-Father"> <br> The All-Father <span class="badge badge">&#8616;</span>
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/props.html', 'Props')">
+                                    <img src="artwork/College/Props_Icon.jpg" class="image-display" alt="Props"> <br> Props
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/palantir.html', 'A Palantir Found')">
+                                    <img src="artwork/College/Palantir_Icon.jpg" class="image-display" alt="A Palantir Found"> <br> A Palantir Found
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/vader.html', 'The Chosen One')">
+                                    <img src="artwork/College/Vader_Negative_Icon.jpg" class="image-display" alt="The Chosen One"> <br> The Chosen One <span class="badge badge">&#8616;</span>
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/reflections.html', 'Reflections')">
+                                    <img src="artwork/College/Reflections_Icon.jpg" class="image-display" alt="Reflections"> <br> Reflections
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/squirtle-math.html', 'Squirtle Math')">
+                                    <img src="artwork/College/Squirtle_Math_Icon.jpg" class="image-display" alt="Math Rocks"> <br> Math Rocks <span class="badge badge">&#8616;</span>
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/nomad-chars.html', 'Nomad Characters')">
+                                    <img src="artwork/College/Azraelith_Icon.jpg" class="image-display" alt="Nomad Characters"> <br> Nomad Characters <span class="badge badge">&#8616;</span>
+                                </button>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-6 mb-3">
+                                <button class="modal-button" onclick="openModalFromFile('artwork/Subpages/moon-knight.html', 'Moon Knight')">
+                                    <img src="artwork/College/Moon_Knight_Icon.jpg" class="image-display" alt="Moon Knight"> <br> Moon Knight
+                                </button>   
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </main>
+
+            <!-- FOOTER -->
+            <footer class="site-footer"></footer>
+        </div>
+        <!-- DYNAMIC MODAL -->
+        <div class="modal fade" id="dynamicModal" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Loading...</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="dynamicModalBody">
+                    <!-- Content gets injected here -->
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="scripts/navAlign.js"></script>
+        <script src="scripts/modalCreation.js"></script>
+    </body>
+</html>
