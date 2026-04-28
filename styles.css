@@ -365,7 +365,7 @@ svg {
     color: var(--black-primary);
 }
 
-.modal-body h3{
+.modal-body h4{
     margin-bottom: 1rem;
     color: var(--black-primary);
     text-align: center;
@@ -411,7 +411,7 @@ svg {
 }
 
 .legend-heading {
-    clamp(1.25rem, 2vw, 1.5rem);
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
     margin-bottom: 0.5rem;
     font-weight: bold;
     text-align: left;

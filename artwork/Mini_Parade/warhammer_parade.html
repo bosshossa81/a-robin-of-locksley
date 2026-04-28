@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../../styles.css">
+        <title>Mini Parade</title>
+    </head>
+    <body>
+        <div class="pageBody" id="pageBody">
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top home-nav" id="mainNav" >
+                <div class="container">
+                    <a class="navbar-brand d-none d-lg-flex" href="../../index.html"><img class="logo-image" src="../../images/homelogotemp.png" alt="A Robin of Locksley Logo"></a>
+                    <a class="navbar-brand d-flex d-lg-none align-items-center  nav-alt-name" href="../../index.html"><img class="logo-image" src="../../images/homelogotemp.png" alt="A Robin of Locksley Logo"> &nbsp; A Robin of Locksley</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><img src="../../images/hamburgermenu_120234.png" alt="MORE" class="hamburger"></span>    
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="https://arobinoflocksley.com">Locksley Decree</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="../../writing.html">Writing</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="../../comics.html">Comics</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="../../artwork.html">Artwork</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="../../worldbuilding.html">Worldbuilding</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <main class="artwork-content">
+                <!-- Sub Tabs  -->
+                <div class="sub-nav">
+                    <div class="container">
+                        <h1><a href="../../artwork.html">Artwork</a> / <a href="mini_parade.html">Mini Parade</a> / Warhammer 40K</h1>
+                    </div>
+                </div>
+
+                <article class="container">
+                    <h2>"In the 41st Millennium, there is only war."</h2>
+                    <p class="sp">Warhammer 40K is <i>the</i> tabletop miniature game if there ever was one. </p>
+                    <p class="sp">Below is my current collection of miniatures grouped by units within their respective armies. </p>
+                </article>
+
+                <article class="image-grid-container">
+                    <div class="container text-center">
+                        <section class="image-grid-row">
+                            <div class="row">
+                                <!-- Adepta Sororitas -->
+                                <div class="col-md-12 mb-3">
+                                    <h2>Adepta Sororitas</h2>
+                                </div>
+                                <div class="col-md-4 col-6 mb-3">
+                                    <button class="modal-button" onclick="openModalFromFile('Warhammer/Subpages/celestine.html', 'Saint Celestine Squad')">
+                                        <img src="Warhammer/Adepta_Sororitas/Celestine_Squad_Icon.jpg" alt="Saint Celestine" class="image-display"> <br> Saint Celestine
+                                    </button>
+                                </div>
+                                <div class="col-md-4 col-6 mb-3">
+                                    <button class="modal-button" onclick="openModalFromFile('Warhammer/Subpages/morvenn.html', 'Morvenn Vahl')">
+                                        <img src="Warhammer/Adepta_Sororitas/Vahl_Icon.jpg" alt="Morvenn Vahl" class="image-display"> <br> Morvenn Vahl
+                                    </button>
+                                </div>
+                                <div class="col-md-4 col-6 mb-3">
+                                    <button class="modal-button" onclick="openModalFromFile('Warhammer/Subpages/daemonifuge.html', 'Daemonifuge')">
+                                        <img src="Warhammer/Adepta_Sororitas/Ephrael_Stern_Icon.jpg" alt="Ephrael Stern" class="image-display"> <br> Daemonifuge* 
+                                    </button>
+                                </div>
+                                <div class="col-md-4 col-6 mb-3">
+                                    <button class="modal-button" onclick="openModalFromFile('Warhammer/Subpages/hospitaller.html', 'Hospitaller')">
+                                        <img src="Warhammer/Adepta_Sororitas/Hospitaller_Icon.jpg" alt="Hospitaller" class="image-display"> <br> Hospitaller
+                                    </button>
+                                </div>
+                                <div class="col-md-4 col-6 mb-3">
+                                    <button class="modal-button" onclick="openModalFromFile('Warhammer/Subpages/dominion-squad.html', 'Dominion Squad')">
+                                        <img src="Warhammer/Adepta_Sororitas/Dominion_Squad_Icon.jpg" alt="Battle Sisters Squad" class="image-display"> <br> Dominion Squad
+                                    </button>
+                                </div>
+
+                                <!-- Not Painted -->
+                                <div class="col-md-12 mb-3">
+                                    <h2>Not Painted</h2>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    Seraphim Squad*
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    Cannoness*
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    Celestian Sacresants*
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    Repentia Squad*
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    Penitent Engine*
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    Arco-Flagellants*
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    Paragon Warsuits*
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    Sororitas Rhino*
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    Castigator*
+                                </div>
+                            </div>
+                        
+                        </section>
+
+                        <section class="image-grid-row">
+                            <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <h2>Imperial Agents</h2>
+                                </div>
+                                <div class="col-md-4 col-6 mb-3">
+                                    <button class="modal-button" onclick="openModalFromFile('Warhammer/Subpages/vindicare.html', 'Vindicare Assassin')">
+                                        <img src="Warhammer/Imperial_Agents/Vindicare_Icon.jpg" alt="Vindicare Assassin" class="image-display"> <br> Vindicare Assassin
+                                    </button>
+                                </div>
+                                <div class="col-md-4 col-6 mb-3">
+                                    <button class="modal-button" onclick="openModalFromFile('Warhammer/Subpages/exaction-squad.html', 'Exaction Squad')">
+                                        <img src="Warhammer/Imperial_Agents/AB_Marshall_Icon.jpg" alt="Arbites Marshall" class="image-display"> <br> Exaction Squad*
+                                    </button>
+                                </div>
+                                <div class="col-md-12  mb-3">
+                                    <h2>Not Painted</h2>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    Custom Marshall Inquisitor*
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    Subductor Squad*
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="image-grid-row">
+                            <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <h2>Chaos</h2>
+                                </div>
+                                <div class="col-md-4 col-6 mb-3">
+                                    <button class="modal-button" onclick="openModalFromFile('Warhammer/Subpages/kharne.html', 'Kharne the Slayer')">
+                                        <img src="Warhammer/Chaos/Kharne_Icon.jpg" alt="Kharne" class="image-display"> <br> Kharne the Slayer
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="image-grid-row">
+                            <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <h2>Desired Armies</h2>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    Space Wolves
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    Drukari
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    Thousand Sons
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </article>
+            </main>
+
+            <!-- Footer -->
+            <footer class="site-footer"></footer>
+        </div>
+
+        <!-- DYNAMIC MODAL -->
+        <div class="modal fade" id="dynamicModal" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Loading...</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body" id="dynamicModalBody">
+                        <!-- Content gets injected here -->
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="../../scripts/navAlign.js"></script>
+        <script src="../../scripts/modalCreation.js"></script>
+    </body>
+</html>
