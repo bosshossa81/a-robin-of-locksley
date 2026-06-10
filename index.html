@@ -35,7 +35,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="https://arobinoflocksley.com">Locksley Decree</a>
+                                <a class="nav-link active" aria-current="page" href="https://arobinoflocksley.com/Locksley_Decree">Locksley Decree</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="writing.html">Writing</a>
@@ -55,7 +55,7 @@
             </nav>
 
             <main class="home-content">
-                <article class="Carousel container my-0">
+                <article class="Carousel my-0">
                         <h2 class="section-title">What's New</h2>
 
                         <div class="swiper locksley-swiper">
@@ -63,7 +63,7 @@
 
                                 <div class="swiper-slide">
                                     <div class="locksley-card" style="--bg-image: url('images/WhoAmIFinalGroup.png');">
-                                        <a href="https://arobinoflocksley.com">
+                                        <a href="https://arobinoflocksley.com/Locksley_Decree">
                                             <h3>Locksley Decree</h3>
                                             <p style="color: var(--base-green);">Head to my blog page for posts and insights when inspiration strikes.</p>
                                         </a>
@@ -98,8 +98,8 @@
                                     </div>
                                 </div>
 
-                                <div class="swiper-slide" style="--bg-image: url('images/Drakonmere.jpg');">
-                                    <div class="locksley-card">
+                                <div class="swiper-slide" >
+                                    <div class="locksley-card" style="--bg-image: url('images/Drakonmere.jpg');">
                                         <a href="worldbuilding.html">
                                             <h3>Worldbuilding</h3>
                                             <p>Still UNDER CONSTRUCTION, but explore the early maps of my fantasy world.</p>
@@ -108,17 +108,17 @@
                                     </div>
                                 </div>
 
-                                <div class="swiper-slide" style="--bg-image: url('images/Geralt_Tub.jpg');">
-                                    <div class="locksley-card">
+                                <div class="swiper-slide" >
+                                    <div class="locksley-card" style="--bg-image: url('images/Geralt_Tub.jpg');">
                                         <a href="artwork/Mini_Parade/mini_parade.html">
                                             <h3>Mini Parade</h3>
                                             <p>Discover the minature worlds of Warhammer, Unmatched, and Gotham City Chronicles</p>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="swiper-slide" style="--bg-image: url('images/Batman.jpg');">
-                                    <div class="locksley-card">
-                                        <a href="artwork/gotham-drawings.html">
+                                <div class="swiper-slide" >
+                                    <div class="locksley-card" style="--bg-image: url('images/Batman.jpg');">
+                                        <a href="artwork/gotham-drawings.html" >
                                             <h3>Gotham Drawings</h3>
                                             <p>Discover my interpretations of the familiar faces of Gotham City</p>
                                         </a>
@@ -128,6 +128,7 @@
                             </div>
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
+                            <div class="swiper-pagination"></div>
                         </div>
                 </article>
                 <article class="container">
@@ -273,41 +274,43 @@
         </script>
         <script>
             const swiper = new Swiper('.locksley-swiper', {
-            effect: 'coverflow',
-            centeredSlides: true,
-            slidesPerView: 3,
-            loop: true,
+                slidesPerView: 3,
+                spaceBetween: 24,
+                centeredSlides: false,
+                loop: false,
 
-
-            autoplay: {
-                delay: 3000,          // 3 seconds
-                disableOnInteraction: false
-            },
-
-            coverflowEffect: {
-                rotate: 25,
-                stretch: 0,
-                depth: 120,
-                modifier: 1,
-                slideShadows: false
-            },
-
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev'
-            },
-
-            breakpoints: {
-                0: {
-                slidesPerView: 2
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
                 },
-                576: {
-                slidesPerView: 2
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
                 },
-                768: {
-                slidesPerView: 3
+
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                        slidesPerGroup: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2,
+                    },
+                    1200: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3,
+                    },
+                    1600: {
+                        slidesPerView: 4,
+                        slidesPerGroup: 4,
+                    },
+                    2000:{
+                        slidesPerView: 5,
+                        slidesPerGroup: 5
+                    }
                 }
-            }
             });
         </script>
     </body>
