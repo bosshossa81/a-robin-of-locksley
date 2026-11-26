@@ -7,7 +7,16 @@
     --gradient-green: #7ea965;
     --white-light: #eeeee9;
     --parchment-tan: #ebdbbf;
-}
+    --robin-blue: #48b9fa;
+    --test: #8d0101;
+
+
+    --lichen: #eef0e6;
+    --pine--ink: #1c261e;
+    --moss: #DCE3D1;
+    --fox--rust: #A84A24;
+    --deep--pine: #2C4A33;
+} 
 body {
     font-family: "Oswald", sans-serif;
     background: radial-gradient(circle, var(--gradient-green) 0%, var(--base-green) 100%);
